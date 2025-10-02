@@ -3,45 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Visor de PDFs</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      background: #222;
-      color: white;
-      padding: 15px;
-      margin: 0;
-    }
-    iframe {
-      width: 90%;
-      height: 600px;
-      border: none;
-      margin: 20px auto;
-      display: block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    .pdf-container {
-      margin: 20px 0;
-    }
-  </style>
+  <title>Mis Series PDF</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>📄 Mi Visor de PDFs</h1>
+  <h1>📚 Mis Series PDF</h1>
 
-  <div class="pdf-container">
-    <h2>PDF 1</h2>
-    <iframe src="https://drive.google.com/file/d/1aAo-vW-cJaJrisMg8B5nWkCsELCIc5tD/preview"></iframe>
-  </div>
+  <div class="series-container">
+    <div class="serie-card">
+      <a href="serie1.html">
+        <img src="https://drive.google.com/file/d/17nl_RBbj_LuRNC34XyB2JAxW1UgWEE5D/view?usp=drivesdk" alt="Serie 1">
+        <h2>Una venganza con harem</h2>
+      </a>
+    </div>
 
-  <div class="pdf-container">
-    <h2>PDF 2</h2>
-    <iframe src="https://drive.google.com/file/d/ID_DEL_PDF/preview"></iframe>
+    <div class="serie-card">
+      <a href="serie2.html">
+        <img src="https://via.placeholder.com/300x180?text=Serie+2" alt="Serie 2">
+        <h2>Serie 2: Misterio</h2>
+      </a>
+    </div>
   </div>
 
 </body>
