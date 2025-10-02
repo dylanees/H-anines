@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f8f8f8;
+}
+
+h1 {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.series-container, .capitulos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.serie-card, .capitulo-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+}
+
+.serie-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.volver {
+  display: inline-block;
+  margin: 15px;
+  font-size: 18px;
+  color: #0066cc;
+}
