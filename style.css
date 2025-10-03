@@ -68,23 +68,30 @@ h1 {
 /* ===========================
    Botón de contacto WhatsApp
    =========================== */
+/* Contenedor para centrar el botón */
+.boton-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Botón WhatsApp */
 .btn-contacto {
   display: inline-block;
-  padding: 12px 24px;
-  margin: 30px auto;             /* centrado con espacio */
-  background: linear-gradient(90deg, #ff4b2b, #45d36c); /* degradado rojo-verde */
+  padding: 14px 30px;
+  background: linear-gradient(90deg, #ff4b2b, #45d36c);
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
   transition: all 0.3s ease-in-out;
-  text-align: center;
+  cursor: pointer;
 }
 
 .btn-contacto:hover {
-  background: linear-gradient(90deg, #ff3c1f, #36c95f); /* más intenso al pasar el mouse */
+  background: linear-gradient(90deg, #ff3c1f, #36c95f);
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
   transform: scale(1.05);
 }
