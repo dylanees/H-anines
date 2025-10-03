@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de Imágenes</title>
+  <title>Galería de Imágenes Organizada</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Botón futurista para blog */
+    /* ----------------- Botones ----------------- */
     .btn-blog {
       display: inline-block;
       padding: 12px 24px;
@@ -26,14 +26,14 @@
       transform: scale(1.05);
     }
 
-    /* Centrar botones */
     .boton-container {
       display: flex;
       justify-content: center;
-      margin: 30px 0;
+      margin: 20px 0;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    /* Botón WhatsApp */
     .btn-contacto {
       display: inline-block;
       padding: 14px 30px;
@@ -52,79 +52,158 @@
       box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
       transform: scale(1.05);
     }
+
+    /* ----------------- Contenedor de galería ----------------- */
+    .galeria-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .imagen-card {
+      width: 200px;
+      text-align: center;
+    }
+
+    .imagen-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .seccion-titulo {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>🖼️ Galería de Imágenes</h1>
-  <p class="subtitulo">Un lugar para guardar recuerdos con una pequeña descripción</p>
+  <h1>🖼️ Galería de Imágenes Organizada</h1>
+  <p class="subtitulo">Todo separado por sesiones/galerías para mantener orden</p>
 
-  <!-- Botón WhatsApp centrado -->
+  <!-- ----------------- Botones centrados ----------------- -->
   <div class="boton-container">
     <a href="https://wa.me/5491127069738" class="btn-contacto" target="_blank">👤 Contactar por WhatsApp</a>
+    <a href="blog1.html" class="btn-blog">Ver publicaciones</a>
   </div>
 
-  <!-- Contenedor de imágenes -->
+  <!-- ----------------- GALERÍA 1 ----------------- -->
+  <div class="seccion-titulo">Galería 1 - Sesión 1</div>
   <div class="galeria-container">
-
-    <!-- Recuerdo 1 -->
+    <!-- Imagen real -->
     <div class="imagen-card">
       <a href="https://ibb.co/tpXpR9n3" target="_blank">
         <img src="https://i.ibb.co/chLhqjRx/IMG-20251003-WA0109.jpg" alt="IMG-20251003-WA0109">
       </a>
-      <h3>esta chica tiene pito</h3>
-      <p>a Esteban le gusta agarrar la anaconda</p>
+      <h3>Ejemplo 1</h3>
+      <p>Descripción ejemplo 1</p>
     </div>
 
-          <!-- Publicación con imagen que enlaza a YouTube -->
-<div class="imagen-card">
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-    <img src="https://i.ibb.co/ZyrYzZd/8e20d6ea2870dd6dfb1a22ba768ffd72.jpg" alt="Video Ejemplo">
-  </a>
-  <h3>únete bro</h3>
-  <p>tenemos los mejores videos del condado</p>
-</div>
-
-    <!-- Recuerdo 3 -->
+    <!-- Imagen real -->
     <div class="imagen-card">
-      <a href="https://postimg.cc/zbSJY76h" target="_blank">
-        <img src="https://i.postimg.cc/B6RtDwCm/IMG-20251003-WA0105.jpg" alt="IMG-20251003-WA0105">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <img src="https://i.ibb.co/ZyrYzZd/8e20d6ea2870dd6dfb1a22ba768ffd72.jpg" alt="Video Ejemplo">
       </a>
-      <h3>ese sale Alejandro</h3>
-      <p>Este es el Alessandro cuando mencionan pene</p>
+      <h3>Ejemplo 2</h3>
+      <p>Descripción ejemplo 2</p>
     </div>
 
-    <!-- Recuerdo 4 -->
+    <!-- Ejemplos vacíos -->
     <div class="imagen-card">
-      <a href="https://postimg.cc/4nfKNH5r" target="_blank">
-        <img src="https://i.postimg.cc/G3YvKksh/IMG-20251003-WA0106.jpg" alt="IMG-20251003-WA0106">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 1">
       </a>
-      <h3>chapulín Colorado</h3>
-      <p>mi disfraz de Halloween todo piola</p>
+      <h3>Ejemplo vacío 1</h3>
+      <p>Descripción vacía 1</p>
     </div>
 
-    <!-- Recuerdo 5 -->
     <div class="imagen-card">
-      <a href="https://postimg.cc/Q9VR0bD0" target="_blank">
-        <img src="https://i.postimg.cc/63ht6jmJ/IMG-20251003-WA0104.jpg" alt="IMG-20251003-WA0104">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 2">
       </a>
-      <h3>estoy chile cojones</h3>
-      <p>de chile cojones hablando con mi ama</p>
+      <h3>Ejemplo vacío 2</h3>
+      <p>Descripción vacía 2</p>
     </div>
-
-    <!-- Recuerdo 6 -->
-    <div class="imagen-card">
-      <a href="https://ibb.co/BKgpHpj4" target="_blank">
-        <img src="https://i.ibb.co/TqHfDfRK/IMG-20251003-WA0108.jpg" alt="IMG-20251003-WA0108">
-      </a>
-      <h3>Tati</h3>
-      <p>la chica que tiene pito</p>
-    </div>
-
   </div>
 
-  <!-- Botón para ir al blog -->
-  <div class="boton-container">
-    <a href="blog1.html" class="btn-blog">ver publicaciones</a>
+  <!-- ----------------- GALERÍA 2 ----------------- -->
+  <div class="seccion-titulo">Galería 2 - Sesión 2</div>
+  <div class="galeria-container">
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 3">
+      </a>
+      <h3>Ejemplo vacío 3</h3>
+      <p>Descripción vacía 3</p>
+    </div>
+
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 4">
+      </a>
+      <h3>Ejemplo vacío 4</h3>
+      <p>Descripción vacía 4</p>
+    </div>
+
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 5">
+      </a>
+      <h3>Ejemplo vacío 5</h3>
+      <p>Descripción vacía 5</p>
+    </div>
+  </div>
+
+  <!-- ----------------- GALERÍA 3 ----------------- -->
+  <div class="seccion-titulo">Galería 3 - Sesión 3</div>
+  <div class="galeria-container">
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 6">
+      </a>
+      <h3>Ejemplo vacío 6</h3>
+      <p>Descripción vacía 6</p>
+    </div>
+
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 7">
+      </a>
+      <h3>Ejemplo vacío 7</h3>
+      <p>Descripción vacía 7</p>
+    </div>
+
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 8">
+      </a>
+      <h3>Ejemplo vacío 8</h3>
+      <p>Descripción vacía 8</p>
+    </div>
+  </div>
+
+  <!-- ----------------- GALERÍA 4 ----------------- -->
+  <div class="seccion-titulo">Galería 4 - Sesión 4</div>
+  <div class="galeria-container">
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 9">
+      </a>
+      <h3>Ejemplo vacío 9</h3>
+      <p>Descripción vacía 9</p>
+    </div>
+
+    <div class="imagen-card">
+      <a href="#" target="_blank">
+        <img src="" alt="Imagen vacía 10">
+      </a>
+      <h3>Ejemplo vacío 10</h3>
+      <p>Descripción vacía 10</p>
+    </div>
   </div>
 
 </body>
