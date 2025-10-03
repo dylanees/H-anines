@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de Imágenes Organizada</title>
+  <title>Galería de Imágenes</title>
   <link rel="stylesheet" href="style.css">
   <style>
     /* ----------------- Botones ----------------- */
@@ -31,21 +31,21 @@
       justify-content: center;
       margin: 20px 0;
       flex-direction: column;
-      gap: 10px;
+      gap: 10px; /* Espacio entre botones */
     }
 
-    .btn-contacto {
-      display: inline-block;
-      padding: 14px 30px;
-      background: linear-gradient(90deg, #ff4b2b, #45d36c);
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
-      transition: all 0.3s ease-in-out;
-      cursor: pointer;
+  .btn-contacto {
+  display: inline-block;
+  padding: 10px 20px; /* más pequeño */
+  background: linear-gradient(90deg, #ff4b2b, #45d36c);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em; /* un poquito más chico */
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
     }
     .btn-contacto:hover {
       background: linear-gradient(90deg, #ff3c1f, #36c95f);
@@ -59,12 +59,12 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      max-width: 1000px;
+      max-width: 1000px; /* Aproximado */
       margin: 0 auto;
     }
 
     .imagen-card {
-      width: 200px;
+      width: 200px; /* Aproximado */
       text-align: center;
     }
 
@@ -72,47 +72,42 @@
       width: 100%;
       border-radius: 8px;
     }
-
-    .seccion-titulo {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
-  <h1>🖼️ Galería de Imágenes Organizada</h1>
-  <p class="subtitulo">Todo separado por sesiones/galerías para mantener orden</p>
+  <h1>🖼️ Galería de Imágenes</h1>
+  <p class="subtitulo">Un lugar para guardar recuerdos con una pequeña descripción</p>
 
   <!-- ----------------- Botones centrados ----------------- -->
   <div class="boton-container">
+    <!-- Botón WhatsApp -->
     <a href="https://wa.me/5491127069738" class="btn-contacto" target="_blank">👤 Contactar por WhatsApp</a>
+    <!-- Botón blog justo debajo -->
     <a href="blog1.html" class="btn-blog">Ver publicaciones</a>
   </div>
 
-  <!-- ----------------- GALERÍA 1 ----------------- -->
-  <div class="seccion-titulo">Galería 1 - Sesión 1</div>
+  <!-- ----------------- Galería de imágenes (aproximado) ----------------- -->
   <div class="galeria-container">
-    <!-- Imagen real -->
+
+    <!-- Imagen 1 real -->
     <div class="imagen-card">
       <a href="https://ibb.co/tpXpR9n3" target="_blank">
         <img src="https://i.ibb.co/chLhqjRx/IMG-20251003-WA0109.jpg" alt="IMG-20251003-WA0109">
       </a>
       <h3>Ejemplo 1</h3>
-      <p>Descripción ejemplo 1</p>
+      <p>Descripción ejemplo</p>
     </div>
 
-    <!-- Imagen real -->
+    <!-- Imagen 2 real -->
     <div class="imagen-card">
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
         <img src="https://i.ibb.co/ZyrYzZd/8e20d6ea2870dd6dfb1a22ba768ffd72.jpg" alt="Video Ejemplo">
       </a>
       <h3>Ejemplo 2</h3>
-      <p>Descripción ejemplo 2</p>
+      <p>Descripción ejemplo</p>
     </div>
 
-    <!-- Ejemplos vacíos -->
+    <!-- ----------------- 10 espacios vacíos para futuras imágenes ----------------- -->
     <div class="imagen-card">
       <a href="#" target="_blank">
         <img src="" alt="Imagen vacía 1">
@@ -128,11 +123,7 @@
       <h3>Ejemplo vacío 2</h3>
       <p>Descripción vacía 2</p>
     </div>
-  </div>
 
-  <!-- ----------------- GALERÍA 2 ----------------- -->
-  <div class="seccion-titulo">Galería 2 - Sesión 2</div>
-  <div class="galeria-container">
     <div class="imagen-card">
       <a href="#" target="_blank">
         <img src="" alt="Imagen vacía 3">
@@ -156,11 +147,7 @@
       <h3>Ejemplo vacío 5</h3>
       <p>Descripción vacía 5</p>
     </div>
-  </div>
 
-  <!-- ----------------- GALERÍA 3 ----------------- -->
-  <div class="seccion-titulo">Galería 3 - Sesión 3</div>
-  <div class="galeria-container">
     <div class="imagen-card">
       <a href="#" target="_blank">
         <img src="" alt="Imagen vacía 6">
@@ -184,11 +171,7 @@
       <h3>Ejemplo vacío 8</h3>
       <p>Descripción vacía 8</p>
     </div>
-  </div>
 
-  <!-- ----------------- GALERÍA 4 ----------------- -->
-  <div class="seccion-titulo">Galería 4 - Sesión 4</div>
-  <div class="galeria-container">
     <div class="imagen-card">
       <a href="#" target="_blank">
         <img src="" alt="Imagen vacía 9">
@@ -204,6 +187,7 @@
       <h3>Ejemplo vacío 10</h3>
       <p>Descripción vacía 10</p>
     </div>
+
   </div>
 
 </body>
