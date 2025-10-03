@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Futurista</title>
+  <style>
+    /* Fondo degradado futurista */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    /* Contenedor de cada publicación */
+    .post {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .post h2 {
+      margin-top: 0;
+      color: #00d4ff;
+      text-shadow: 0 0 5px #00d4ff;
+    }
+
+    .post p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* Botón para volver a la galería */
+    .btn-volver {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+      transition: 0.3s;
+    }
+
+    .btn-volver:hover {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Noticias Futuristas</h1>
+
+  <!-- Publicación con imagen -->
+  <div class="post">
+    <img src="https://via.placeholder.com/700x300" alt="Ejemplo Imagen" />
+    <h2>Huracán Alpha arrasa la costa</h2>
+    <p>Un huracán de categoría 5 llamado Alpha ha llegado a la costa este causando estragos en varias ciudades. Las autoridades han pedido evacuación inmediata.</p>
+  </div>
+
+  <!-- Publicación solo con texto -->
+  <div class="post">
+    <h2>Nuevo descubrimiento espacial</h2>
+    <p>Los científicos han encontrado señales de agua líquida en un exoplaneta cercano. Este hallazgo podría cambiar la búsqueda de vida en el universo.</p>
+  </div>
+
+  <a href="index.html" class="btn-volver">Volver a la Galería</a>
+
+</body>
+</html>
