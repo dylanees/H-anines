@@ -5,94 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galería de Imágenes</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Botón futurista para blog */
+    .btn-blog {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px auto;
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+    }
+    .btn-blog:hover {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+      transform: scale(1.05);
+    }
+
+    /* Centrar botones */
+    .boton-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    /* Botón WhatsApp */
+    .btn-contacto {
+      display: inline-block;
+      padding: 14px 30px;
+      background: linear-gradient(90deg, #ff4b2b, #45d36c);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    .btn-contacto:hover {
+      background: linear-gradient(90deg, #ff3c1f, #36c95f);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <!-- Título principal -->
   <h1>🖼️ Galería de Imágenes</h1>
   <p class="subtitulo">Un lugar para guardar recuerdos con una pequeña descripción</p>
 
-
-   <div class="boton-container">
-  <a href="https://wa.me/5491127069738" class="btn-contacto" target="_blank">👤 Contactar por WhatsApp</a>
-</div>
+  <!-- Botón WhatsApp centrado -->
+  <div class="boton-container">
+    <a href="https://wa.me/5491127069738" class="btn-contacto" target="_blank">👤 Contactar por WhatsApp</a>
+  </div>
 
   <!-- Contenedor de imágenes -->
   <div class="galeria-container">
 
     <!-- Recuerdo 1 -->
     <div class="imagen-card">
-      <!-- Reemplaza el enlace por el Direct Link de tu imagen -->
-      <a href="https://ibb.co/tpXpR9n3"><img src="https://i.ibb.co/chLhqjRx/IMG-20251003-WA0109.jpg" alt="IMG-20251003-WA0109" border="0"></a>
+      <a href="https://ibb.co/tpXpR9n3" target="_blank">
+        <img src="https://i.ibb.co/chLhqjRx/IMG-20251003-WA0109.jpg" alt="IMG-20251003-WA0109">
+      </a>
       <h3>esta chica tiene pito</h3>
-      <p> a Esteban le gusta agarrar la anaconda</p>
+      <p>a Esteban le gusta agarrar la anaconda</p>
     </div>
 
     <!-- Recuerdo 2 -->
     <div class="imagen-card">
-      <a href='https://postimg.cc/Lq9xBK1M' target='_blank'><img src='https://i.postimg.cc/jjNBTRqC/IMG-20251003-WA0115.jpg' border='0' alt='IMG-20251003-WA0115'/></a>
+      <a href="https://postimg.cc/Lq9xBK1M" target="_blank">
+        <img src="https://i.postimg.cc/jjNBTRqC/IMG-20251003-WA0115.jpg" alt="IMG-20251003-WA0115">
       </a>
       <h3>agarró hambre</h3>
       <p>el negro va de compra al súper porque le agarró un antojito</p>
     </div>
 
-<!-- Recuerdo 3 -->
+    <!-- Recuerdo 3 -->
     <div class="imagen-card">
-      <a href='https://postimg.cc/zbSJY76h' target='_blank'><img src='https://i.postimg.cc/B6RtDwCm/IMG-20251003-WA0105.jpg' border='0' alt='IMG-20251003-WA0105'/></a>
+      <a href="https://postimg.cc/zbSJY76h" target="_blank">
+        <img src="https://i.postimg.cc/B6RtDwCm/IMG-20251003-WA0105.jpg" alt="IMG-20251003-WA0105">
       </a>
       <h3>ese sale Alejandro</h3>
       <p>Este es el Alessandro cuando mencionan pene</p>
     </div>
 
-<!-- Recuerdo 4 -->
+    <!-- Recuerdo 4 -->
     <div class="imagen-card">
-      <a href='https://postimg.cc/4nfKNH5r' target='_blank'><img src='https://i.postimg.cc/G3YvKksh/IMG-20251003-WA0106.jpg' border='0' alt='IMG-20251003-WA0106'/></a>
+      <a href="https://postimg.cc/4nfKNH5r" target="_blank">
+        <img src="https://i.postimg.cc/G3YvKksh/IMG-20251003-WA0106.jpg" alt="IMG-20251003-WA0106">
       </a>
       <h3>chapulín Colorado</h3>
       <p>mi disfraz de Halloween todo piola</p>
     </div>
 
-<!-- Recuerdo 5 -->
+    <!-- Recuerdo 5 -->
     <div class="imagen-card">
-      <a href='https://postimg.cc/Q9VR0bD0' target='_blank'><img src='https://i.postimg.cc/63ht6jmJ/IMG-20251003-WA0104.jpg' border='0' alt='IMG-20251003-WA0104'/></a>
+      <a href="https://postimg.cc/Q9VR0bD0" target="_blank">
+        <img src="https://i.postimg.cc/63ht6jmJ/IMG-20251003-WA0104.jpg" alt="IMG-20251003-WA0104">
       </a>
       <h3>estoy chile cojones</h3>
       <p>de chile cojones hablando con mi ama</p>
     </div>
 
-<!-- Recuerdo 6 -->
+    <!-- Recuerdo 6 -->
     <div class="imagen-card">
-      <a href="https://ibb.co/BKgpHpj4"><img src="https://i.ibb.co/TqHfDfRK/IMG-20251003-WA0108.jpg" alt="IMG-20251003-WA0108" border="0"></a>
+      <a href="https://ibb.co/BKgpHpj4" target="_blank">
+        <img src="https://i.ibb.co/TqHfDfRK/IMG-20251003-WA0108.jpg" alt="IMG-20251003-WA0108">
       </a>
       <h3>Tati</h3>
       <p>la chica que tiene pito</p>
     </div>
 
-    <!-- Agrega más recuerdos repitiendo el bloque de imagen-card -->
-
-<!-- Botón futurista que lleva al blog -->
-<a href="blog1.html" class="btn-blog">ver publicaciones</a>
-
-<style>
-  .btn-blog {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-top: 20px;
-    background: linear-gradient(90deg, #4b6cb7, #182848);
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .btn-blog:hover {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
-    transform: scale(1.05);
-  }
-</style>
-
   </div>
+
+  <!-- Botón para ir al blog -->
+  <div class="boton-container">
+    <a href="blog1.html" class="btn-blog">ver publicaciones</a>
+  </div>
+
 </body>
 </html>
