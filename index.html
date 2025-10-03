@@ -29,23 +29,24 @@
     .boton-container {
       display: flex;
       justify-content: center;
-      margin: 20px 0;
       flex-direction: column;
-      gap: 10px; /* Espacio entre botones */
+      align-items: center;
+      gap: 10px; /* espacio entre botones */
+      margin: 20px 0;
     }
 
-  .btn-contacto {
-  display: inline-block;
-  padding: 10px 20px; /* más pequeño */
-  background: linear-gradient(90deg, #ff4b2b, #45d36c);
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1em; /* un poquito más chico */
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+    .btn-contacto {
+      display: inline-block;
+      padding: 10px 20px; /* más pequeño */
+      background: linear-gradient(90deg, #ff4b2b, #45d36c);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em; /* un poquito más chico */
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
     }
     .btn-contacto:hover {
       background: linear-gradient(90deg, #ff3c1f, #36c95f);
@@ -59,17 +60,25 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      max-width: 1000px; /* Aproximado */
+      max-width: 1000px;
       margin: 0 auto;
     }
 
     .imagen-card {
-      width: 200px; /* Aproximado */
+      width: 220px; /* un poquito más ancho */
+      height: 220px;
       text-align: center;
+      background: #f5f5f5; /* solo para ver el recuadro */
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .imagen-card img {
       width: 100%;
+      height: auto;
       border-radius: 8px;
     }
   </style>
@@ -80,114 +89,71 @@
 
   <!-- ----------------- Botones centrados ----------------- -->
   <div class="boton-container">
-    <!-- Botón WhatsApp -->
     <a href="https://wa.me/5491127069738" class="btn-contacto" target="_blank">👤 Contactar por WhatsApp</a>
-    <!-- Botón blog justo debajo -->
     <a href="blog1.html" class="btn-blog">Ver publicaciones</a>
   </div>
 
-  <!-- ----------------- Galería de imágenes (aproximado) ----------------- -->
+  <!-- ----------------- Galería de imágenes (ejemplos vacíos) ----------------- -->
   <div class="galeria-container">
-
     <!-- Imagen 1 real -->
     <div class="imagen-card">
       <a href="https://ibb.co/tpXpR9n3" target="_blank">
-        <img src="https://i.ibb.co/chLhqjRx/IMG-20251003-WA0109.jpg" alt="IMG-20251003-WA0109">
+        <img src="https://i.ibb.co/chLhqjRx/IMG-20251003-WA0109.jpg" alt="Ejemplo real 1">
       </a>
-      <h3>Ejemplo 1</h3>
-      <p>Descripción ejemplo</p>
+      <h3>Ejemplo real 1</h3>
+      <p>Descripción ejemplo 1</p>
     </div>
 
     <!-- Imagen 2 real -->
     <div class="imagen-card">
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-        <img src="https://i.ibb.co/ZyrYzZd/8e20d6ea2870dd6dfb1a22ba768ffd72.jpg" alt="Video Ejemplo">
+        <img src="https://i.ibb.co/ZyrYzZd/8e20d6ea2870dd6dfb1a22ba768ffd72.jpg" alt="Ejemplo real 2">
       </a>
-      <h3>Ejemplo 2</h3>
-      <p>Descripción ejemplo</p>
+      <h3>Ejemplo real 2</h3>
+      <p>Descripción ejemplo 2</p>
     </div>
 
-    <!-- ----------------- 10 espacios vacíos para futuras imágenes ----------------- -->
+    <!-- 10 espacios vacíos para futuras imágenes -->
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 1">
-      </a>
-      <h3>Ejemplo vacío 1</h3>
-      <p>Descripción vacía 1</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 1"></a>
+      <h3>Ejemplo vacío 1</h3><p>Descripción vacía 1</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 2">
-      </a>
-      <h3>Ejemplo vacío 2</h3>
-      <p>Descripción vacía 2</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 2"></a>
+      <h3>Ejemplo vacío 2</h3><p>Descripción vacía 2</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 3">
-      </a>
-      <h3>Ejemplo vacío 3</h3>
-      <p>Descripción vacía 3</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 3"></a>
+      <h3>Ejemplo vacío 3</h3><p>Descripción vacía 3</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 4">
-      </a>
-      <h3>Ejemplo vacío 4</h3>
-      <p>Descripción vacía 4</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 4"></a>
+      <h3>Ejemplo vacío 4</h3><p>Descripción vacía 4</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 5">
-      </a>
-      <h3>Ejemplo vacío 5</h3>
-      <p>Descripción vacía 5</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 5"></a>
+      <h3>Ejemplo vacío 5</h3><p>Descripción vacía 5</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 6">
-      </a>
-      <h3>Ejemplo vacío 6</h3>
-      <p>Descripción vacía 6</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 6"></a>
+      <h3>Ejemplo vacío 6</h3><p>Descripción vacía 6</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 7">
-      </a>
-      <h3>Ejemplo vacío 7</h3>
-      <p>Descripción vacía 7</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 7"></a>
+      <h3>Ejemplo vacío 7</h3><p>Descripción vacía 7</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 8">
-      </a>
-      <h3>Ejemplo vacío 8</h3>
-      <p>Descripción vacía 8</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 8"></a>
+      <h3>Ejemplo vacío 8</h3><p>Descripción vacía 8</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 9">
-      </a>
-      <h3>Ejemplo vacío 9</h3>
-      <p>Descripción vacía 9</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 9"></a>
+      <h3>Ejemplo vacío 9</h3><p>Descripción vacía 9</p>
     </div>
-
     <div class="imagen-card">
-      <a href="#" target="_blank">
-        <img src="" alt="Imagen vacía 10">
-      </a>
-      <h3>Ejemplo vacío 10</h3>
-      <p>Descripción vacía 10</p>
+      <a href="#" target="_blank"><img src="" alt="Imagen vacía 10"></a>
+      <h3>Ejemplo vacío 10</h3><p>Descripción vacía 10</p>
     </div>
-
   </div>
 
 </body>
