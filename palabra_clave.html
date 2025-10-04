@@ -1,0 +1,89 @@
+<!-- 
+ CAMBIA AQUÍ:
+ - Sustituye las palabras clave en las líneas marcadas
+ - Cambia las URL para que cada palabra lleve a donde quieras
+ - Puedes agregar más palabras clave copiando un bloque "if" entero
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login con Palabras Clave</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      width: 300px;
+    }
+    input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    p {
+      color: #ff5555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Introduce la palabra clave</h2>
+    <input type="text" id="password" placeholder="Escribe aquí...">
+    <button onclick="checkPassword()">Entrar</button>
+    <p id="error"></p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value.trim().toLowerCase();
+      const errorMsg = document.getElementById("error");
+      errorMsg.textContent = "";
+
+      // PALABRAS CLAVE Y SUS URLS
+      if (input === "Alessandro") {                   // palabra clave 1
+        window.location.href = "https://ejemplo1.com";
+      } else if (input === "arbol azul") {            // palabra clave 2
+        window.location.href = "https://ejemplo2.com";
+      } else if (input === "piedra lunar") {          // palabra clave 3
+        window.location.href = "https://ejemplo3.com";
+      } else if (input === "fuego rojo") {            // palabra clave 4
+        window.location.href = "https://ejemplo4.com";
+      } else if (input === "llave dorada") {          // palabra clave 5
+        window.location.href = "https://ejemplo5.com";
+      } else {
+        errorMsg.textContent = "Palabra clave incorrecta.";
+      }
+    }
+  </script>
+</body>
+</html>
