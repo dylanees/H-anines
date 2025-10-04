@@ -31,18 +31,18 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      gap: 10px; /* espacio entre botones */
+      gap: 10px;
       margin: 20px 0;
     }
 
     .btn-contacto {
       display: inline-block;
-      padding: 10px 20px; /* más pequeño */
+      padding: 10px 20px;
       background: linear-gradient(90deg, #ff4b2b, #45d36c);
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1em; /* un poquito más chico */
+      font-size: 1em;
       border-radius: 8px;
       box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
       transition: all 0.3s ease-in-out;
@@ -65,29 +65,44 @@
     }
 
     .imagen-card {
-      width: 220px; /* un poquito más ancho */
-      height: 220px;
+      width: 220px;
+      height: 260px;
       text-align: center;
-      background: #f5f5f5; /* solo para ver el recuadro */
+      background: rgba(255,255,255,0.05);
       border-radius: 8px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      color: #fff;
     }
 
     .imagen-card img {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .subtitulo {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
+
   <h1>🖼️ Galería de Imágenes</h1>
   <p class="subtitulo">Un lugar para guardar recuerdos con una pequeña descripción</p>
 
-/*<!-- ----------------- Botones centrados ----------------- -->*/
+  <!-- ----------------- Botones centrados ----------------- -->
   <div class="boton-container">
     <a href="https://wa.me/5491127069738" class="btn-contacto" target="_blank">👤 Contactar por WhatsApp</a>
     <a href="blog1.html" class="btn-blog">Ver publicaciones</a>
@@ -98,7 +113,6 @@
 
     <!-- Recuerdo 1 -->
     <div class="imagen-card">
-      <!-- Reemplaza el enlace por el Direct Link de tu imagen -->
       <a href="https://postimg.cc/XXXXXXXX" target="_blank">
         <img src="https://postimg.cc/XXXXXXXX" alt="Recuerdo 1">
       </a>
@@ -115,8 +129,34 @@
       <p>El cielo se veía de colores mágicos 🌅</p>
     </div>
 
-    <!-- Agrega más recuerdos repitiendo el bloque de imagen-card -->
+    <!-- Recuerdo 3 -->
+    <div class="imagen-card">
+      <a href="https://postimg.cc/ZZZZZZZZ" target="_blank">
+        <img src="https://postimg.cc/ZZZZZZZZ" alt="Recuerdo 3">
+      </a>
+      <h3>Ciudad de noche</h3>
+      <p>Las luces iluminaban todo el centro 🌃</p>
+    </div>
 
+    <!-- Recuerdo 4 -->
+    <div class="imagen-card">
+      <a href="https://postimg.cc/AAAAAAA" target="_blank">
+        <img src="https://postimg.cc/AAAAAAA" alt="Recuerdo 4">
+      </a>
+      <h3>Picnic en el parque</h3>
+      <p>Una tarde soleada llena de risas y comida 🧺</p>
+    </div>
+
+    <!-- Recuerdo 5 -->
+    <div class="imagen-card">
+      <a href="https://postimg.cc/BBBBBBB" target="_blank">
+        <img src="https://postimg.cc/BBBBBBB" alt="Recuerdo 5">
+      </a>
+      <h3>Primera mascota</h3>
+      <p>El día que adopté a mi gatito 🐱</p>
+    </div>
+
+  </div>
 
 </body>
 </html>
